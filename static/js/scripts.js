@@ -29,18 +29,17 @@ function clickHandlers() {
 
 //end video
 
-var addContent = function (data) {
-  var looped = '';
-  for (let i = 0; i < data.results.length; i++) {
-    looped += `
-      <div class="item">
-        <h3>${data.results[i].title}</h3>
-        <p>${data.results[i].abstract}</p>
-      </div>
-      `;
-  }
-  document.querySelector('.content div').innerHTML = looped;
-};
+// var addContent = function (data) {
+//   var looped = '';
+//   for (let i = 0; i < data.results.length; i++) {
+//     looped += `
+//       <div class="item">
+//         <h3>${data.results[i].name}</h3>
+//       </div>
+//       `;
+//   }
+//   document.querySelector('.content div').innerHTML = looped;
+// };
 
 var getData = function () {
   fetch(gitHub)
