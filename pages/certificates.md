@@ -9,7 +9,7 @@ images:
 ---
 
 {% for filename in images %}
-<img src="/static/img/{{ filename }}" alt="Dakota's awards" srcset="">
+<img class="full" src="/static/img/{{ filename }}" alt="Dakota's awards" srcset="">
 {% endfor %}
 
 [Home](/)

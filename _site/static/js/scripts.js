@@ -34,8 +34,7 @@ var addContent = function (data) {
   for (let i = 0; i < data.results.length; i++) {
     looped += `
       <div class="item">
-        <h3>${data.results[i].title}</h3>
-        <p>${data.results[i].abstract}</p>
+        <h3>${data.results[i].name}</h3>
       </div>
       `;
   }
